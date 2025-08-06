@@ -2,7 +2,7 @@ import Layout from '@/components/Layout'
 import SignupForm from '@/components/SignupForm'
 import StylishDivider from '@/components/StylishDivider'
 import WeekOutlineWithPhrases from '@/components/WeekOutlineWithPhrases'
-
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -47,7 +47,7 @@ export default function Home() {
       Join our Business English Coaching Program for Professionals.
     </p>
 
-    <a
+    <Link
   href="/#signup"
   className="floating-cta"
   style={{
@@ -67,7 +67,7 @@ export default function Home() {
   onMouseOut={(e) => e.target.style.backgroundColor = '#5A4B47'}
 >
   👉 Book Your Free Consultation
-</a>
+</Link>
 
   </div>
 </section>

@@ -47,7 +47,7 @@ export default function Layout({ children }) {
           <nav className="nav-desktop">
             <Link href="/" passHref><span style={navLinkStyle}>Home</span></Link>
             <Link href="/about" passHref><span style={navLinkStyle}>About</span></Link>
-            <a href="/#signup" style={navLinkStyle}>Sign Up</a>
+            <Link href="/#signup" style={navLinkStyle}>Sign Up</Link>
           </nav>
         </div>
 
@@ -56,7 +56,7 @@ export default function Layout({ children }) {
           <nav className="nav-mobile">
             <Link href="/" passHref><span onClick={toggleMenu} style={navLinkStyle}>Home</span></Link>
             <Link href="/about" passHref><span onClick={toggleMenu} style={navLinkStyle}>About</span></Link>
-            <a href="/#signup" onClick={toggleMenu} style={navLinkStyle}>Sign Up</a>
+            <Link href="/#signup" onClick={toggleMenu} style={navLinkStyle}>Sign Up</Link>
           </nav>
         )}
       </header>
